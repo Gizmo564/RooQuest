@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-qbit-torrent-action"
+description = "Enables the qbit_torrent_action command without any pre-configured scope."
+commands.allow = ["qbit_torrent_action"]
+
+[[permission]]
+identifier = "deny-qbit-torrent-action"
+description = "Denies the qbit_torrent_action command without any pre-configured scope."
+commands.deny = ["qbit_torrent_action"]

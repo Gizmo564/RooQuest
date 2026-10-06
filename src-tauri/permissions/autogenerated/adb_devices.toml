@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-adb-devices"
+description = "Enables the adb_devices command without any pre-configured scope."
+commands.allow = ["adb_devices"]
+
+[[permission]]
+identifier = "deny-adb-devices"
+description = "Denies the adb_devices command without any pre-configured scope."
+commands.deny = ["adb_devices"]

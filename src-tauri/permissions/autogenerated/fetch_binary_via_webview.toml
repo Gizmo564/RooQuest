@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-fetch-binary-via-webview"
+description = "Enables the fetch_binary_via_webview command without any pre-configured scope."
+commands.allow = ["fetch_binary_via_webview"]
+
+[[permission]]
+identifier = "deny-fetch-binary-via-webview"
+description = "Denies the fetch_binary_via_webview command without any pre-configured scope."
+commands.deny = ["fetch_binary_via_webview"]

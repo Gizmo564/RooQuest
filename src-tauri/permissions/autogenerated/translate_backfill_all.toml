@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-translate-backfill-all"
+description = "Enables the translate_backfill_all command without any pre-configured scope."
+commands.allow = ["translate_backfill_all"]
+
+[[permission]]
+identifier = "deny-translate-backfill-all"
+description = "Denies the translate_backfill_all command without any pre-configured scope."
+commands.deny = ["translate_backfill_all"]

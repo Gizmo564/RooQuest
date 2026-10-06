@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-igdb-backfill-all"
+description = "Enables the igdb_backfill_all command without any pre-configured scope."
+commands.allow = ["igdb_backfill_all"]
+
+[[permission]]
+identifier = "deny-igdb-backfill-all"
+description = "Denies the igdb_backfill_all command without any pre-configured scope."
+commands.deny = ["igdb_backfill_all"]

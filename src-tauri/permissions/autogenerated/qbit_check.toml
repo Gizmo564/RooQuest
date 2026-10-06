@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-qbit-check"
+description = "Enables the qbit_check command without any pre-configured scope."
+commands.allow = ["qbit_check"]
+
+[[permission]]
+identifier = "deny-qbit-check"
+description = "Denies the qbit_check command without any pre-configured scope."
+commands.deny = ["qbit_check"]

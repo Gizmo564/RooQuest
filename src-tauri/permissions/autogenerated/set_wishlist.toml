@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-set-wishlist"
+description = "Enables the set_wishlist command without any pre-configured scope."
+commands.allow = ["set_wishlist"]
+
+[[permission]]
+identifier = "deny-set-wishlist"
+description = "Denies the set_wishlist command without any pre-configured scope."
+commands.deny = ["set_wishlist"]

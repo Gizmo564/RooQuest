@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-adb-check-path"
+description = "Enables the adb_check_path command without any pre-configured scope."
+commands.allow = ["adb_check_path"]
+
+[[permission]]
+identifier = "deny-adb-check-path"
+description = "Denies the adb_check_path command without any pre-configured scope."
+commands.deny = ["adb_check_path"]

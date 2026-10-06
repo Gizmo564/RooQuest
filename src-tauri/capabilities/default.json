@@ -1,0 +1,60 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Capability for the main window",
+  "windows": [
+    "main",
+    "nnmclub",
+    "server",
+    "app"
+  ],
+  "permissions": [
+    "core:default",
+    "opener:default",
+    "allow-get-games",
+    "allow-start-scraper-test",
+    "allow-start-nnmclub-scraper-test",
+    "allow-open-source-login",
+    "allow-check-source-login",
+    "allow-fetch-via-webview",
+    "allow-webview-fetch-result",
+    "allow-get-game",
+    "allow-update-game",
+    "allow-delete-game",
+    "allow-set-wishlist",
+    "allow-get-settings",
+    "allow-save-settings",
+    "allow-session-exists",
+    "allow-session-check",
+    "allow-import-cookies",
+    "allow-qbit-check",
+    "allow-qbit-add-torrent",
+    "allow-qbit-list-torrents",
+    "allow-qbit-torrent-action",
+    "allow-torrent-add",
+    "allow-torrent-list",
+    "allow-torrent-action",
+    "allow-adb-devices",
+    "allow-adb-check-path",
+    "allow-adb-apps",
+    "allow-adb-uninstall",
+    "allow-adb-install",
+    "allow-adb-backup-app",
+    "allow-fs-folders",
+    "allow-fs-scan-local-downloads",
+    "allow-fs-manual-index",
+    "allow-fs-remove-index",
+    "allow-igdb-backfill-all",
+    "allow-translate-backfill-all",
+    "allow-translate-one",
+    "allow-fetch-binary-via-webview",
+    "allow-webview-fetch-binary-result"
+  ],
+  "remote": {
+    "urls": [
+      "https://rutracker.org/*",
+      "https://nnmclub.to/*",
+      "https://go.srcdl1.xyz/*"
+    ]
+  }
+}

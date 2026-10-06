@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-session-check"
+description = "Enables the session_check command without any pre-configured scope."
+commands.allow = ["session_check"]
+
+[[permission]]
+identifier = "deny-session-check"
+description = "Denies the session_check command without any pre-configured scope."
+commands.deny = ["session_check"]

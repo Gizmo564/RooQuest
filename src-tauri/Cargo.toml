@@ -1,0 +1,59 @@
+[package]
+name = "rooquest-desktop"
+version = "0.1.0"
+description = "RooQuest -- standalone Rust/Tauri rewrite"
+authors = ["Tanner Nelson"]
+edition = "2021"
+
+[lib]
+name = "rooquest_desktop_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-opener = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["full"] }
+
+# DB -- bundled sqlite, no system dependency needed (matches the Node app's sqlite3)
+rusqlite = { version = "0.40", features = ["bundled"] }
+
+# HTTP client -- used for translation and the qBittorrent Web API (NOT for rutracker,
+# which goes through the WebView per the scrape-spike findings)
+reqwest = { version = "0.12", features = ["json", "cookies"] }
+
+# HTML parsing -- Rust's cheerio equivalent, used to parse HTML the WebView hands back
+scraper = "0.27"
+
+# Native BitTorrent engine -- primary torrent backend; qBittorrent (qbittorrent.rs)
+# is kept as an automatic, fully-optional fallback if rqbit fails.
+librqbit = "9.0.1"
+# Needed directly (not just transitively via librqbit) for the Id20 hash type,
+# which librqbit itself does not re-export at its crate root.
+librqbit-core = { version = "9.0.1", default-features = false }
+
+regex = "1"
+dirs = "7"
+encoding_rs = "0.8"
+chrono = { version = "0.4", features = ["serde"] }
+urlencoding = "2"
+anyhow = "1"
+
+# Used to compute a torrent's info-hash (to synthesize a magnet link) from a
+# raw .torrent file fetched via the authenticated NNM-Club webview session --
+# NNM-Club's search results sometimes only expose a download.php (.torrent
+# file) link, not a ready-made magnet: URI.
+sha1 = "0.10"
+base64 = "0.22"
+
+# Read the optimization guideline for more details: https://tauri.app/concept/size/#cargo-configuration
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = 3
+panic = "abort"
+strip = true

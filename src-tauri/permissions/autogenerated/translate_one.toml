@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-translate-one"
+description = "Enables the translate_one command without any pre-configured scope."
+commands.allow = ["translate_one"]
+
+[[permission]]
+identifier = "deny-translate-one"
+description = "Denies the translate_one command without any pre-configured scope."
+commands.deny = ["translate_one"]

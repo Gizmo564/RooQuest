@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-fs-scan-local-downloads"
+description = "Enables the fs_scan_local_downloads command without any pre-configured scope."
+commands.allow = ["fs_scan_local_downloads"]
+
+[[permission]]
+identifier = "deny-fs-scan-local-downloads"
+description = "Denies the fs_scan_local_downloads command without any pre-configured scope."
+commands.deny = ["fs_scan_local_downloads"]

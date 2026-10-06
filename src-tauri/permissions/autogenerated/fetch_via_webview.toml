@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-fetch-via-webview"
+description = "Enables the fetch_via_webview command without any pre-configured scope."
+commands.allow = ["fetch_via_webview"]
+
+[[permission]]
+identifier = "deny-fetch-via-webview"
+description = "Denies the fetch_via_webview command without any pre-configured scope."
+commands.deny = ["fetch_via_webview"]

@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-webview-fetch-binary-result"
+description = "Enables the webview_fetch_binary_result command without any pre-configured scope."
+commands.allow = ["webview_fetch_binary_result"]
+
+[[permission]]
+identifier = "deny-webview-fetch-binary-result"
+description = "Denies the webview_fetch_binary_result command without any pre-configured scope."
+commands.deny = ["webview_fetch_binary_result"]

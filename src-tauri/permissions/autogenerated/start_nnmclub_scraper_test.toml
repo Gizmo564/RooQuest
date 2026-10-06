@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-start-nnmclub-scraper-test"
+description = "Enables the start_nnmclub_scraper_test command without any pre-configured scope."
+commands.allow = ["start_nnmclub_scraper_test"]
+
+[[permission]]
+identifier = "deny-start-nnmclub-scraper-test"
+description = "Denies the start_nnmclub_scraper_test command without any pre-configured scope."
+commands.deny = ["start_nnmclub_scraper_test"]

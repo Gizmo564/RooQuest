@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-fs-folders"
+description = "Enables the fs_folders command without any pre-configured scope."
+commands.allow = ["fs_folders"]
+
+[[permission]]
+identifier = "deny-fs-folders"
+description = "Denies the fs_folders command without any pre-configured scope."
+commands.deny = ["fs_folders"]

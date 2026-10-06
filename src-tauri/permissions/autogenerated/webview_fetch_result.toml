@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-webview-fetch-result"
+description = "Enables the webview_fetch_result command without any pre-configured scope."
+commands.allow = ["webview_fetch_result"]
+
+[[permission]]
+identifier = "deny-webview-fetch-result"
+description = "Denies the webview_fetch_result command without any pre-configured scope."
+commands.deny = ["webview_fetch_result"]

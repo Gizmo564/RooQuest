@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-qbit-list-torrents"
+description = "Enables the qbit_list_torrents command without any pre-configured scope."
+commands.allow = ["qbit_list_torrents"]
+
+[[permission]]
+identifier = "deny-qbit-list-torrents"
+description = "Denies the qbit_list_torrents command without any pre-configured scope."
+commands.deny = ["qbit_list_torrents"]
